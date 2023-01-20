@@ -1,13 +1,7 @@
-import React from 'react';
+import Style from './Button.module.scss';
 
-class Button extends React.Component {
-    render(){
-        return(
-            <button>
-                Button
-            </button>
-        )
-    }
+export default function Button () {
+    return(
+        <button className={Style.button}>Add new task</button>
+    )
 }
-
-export default Button;
