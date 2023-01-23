@@ -1,5 +1,5 @@
 .listTasks {
-    grid-area: tarefas;
+    grid-area: tasks;
     height: 100%;
   
     h2 {
@@ -51,7 +51,7 @@
     }
   }
   
-  .itemSelecionado {
+  .selectedItem {
     background-color: #292929;
     box-shadow: 2px 4px 4px #0000009F inset;
   }
