@@ -1,9 +1,18 @@
 import Style from './Button.module.scss';
 
-export default function Button ({text, type} : { text: string; 
-    type?: "button" | "submit" | "reset" | undefined}) {
+interface Props{
+    text: string, 
+    type?: "button" | "submit" | "reset" | undefined, 
+    onClick?:() => void
+}
+
+export default function Button ({text, type, onClick} : Props) {
     return(
-        <button className={Style.button} type={type}>
+        <button
+        onClick={onClick} 
+        className={Style.button} 
+        type={type}
+        >
             {text}
         </button>
     )
